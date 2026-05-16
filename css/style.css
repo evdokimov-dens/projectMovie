@@ -190,6 +190,39 @@ input {
   border-bottom: 1.5rem solid transparent;
   border-radius: 0.2rem;
 }
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+  padding-right: 1rem;
+}
+.title_left,
+.title_right {
+  display: flex;
+  align-items: center;
+}
+.title_main {
+  font-size: 2rem;
+  line-height: 115%;
+}
+.title_count {
+  margin-left: 2rem;
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 2rem;
+  line-height: 115%;
+}
+.title_right span {
+  font-size: 1.4rem;
+  line-height: 114%;
+  color: rgba(255, 255, 255, 0.2);
+}
+.title_right img {
+  width: 2rem;
+  height: 1.5rem;
+  margin-left: 0.4rem;
+}
 
 /*сетка*/
 @media (max-width: 108em) {
