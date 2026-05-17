@@ -161,7 +161,7 @@ input {
 .main_display_header {
   font-weight: 700;
   font-size: 2.4rem;
-  line-height: 117%;
+  line-height: 150%;
 }
 .main_display_date {
   font-weight: 700;
@@ -173,7 +173,7 @@ input {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: rgba(255, 255, 255, 0.07);
+  background: rgba(255, 255, 255, 0.3);
   width: 8.1rem;
   height: 8.1rem;
   border-radius: 50%;
@@ -221,6 +221,124 @@ input {
 .title_right img {
   width: 2rem;
   height: 1.5rem;
+  margin-left: 0.4rem;
+}
+.trending,
+.popular {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 1.6rem;
+}
+.trending_item {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  width: 47%;
+  height: 25.1rem;
+  border-radius: 1.6rem;
+  background: url(../img/trending-item-back.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.tranding_footer,
+.popular_footer {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.8rem 1rem 1.8rem 6.4rem;
+  border-radius: 1.6rem;
+  background: rgba(255, 255, 255, 0.3);
+}
+.popular_footer {
+  background: rgba(255, 255, 255, 0.4);
+  padding: 0.8rem 1.9rem 0.8rem 6.4rem;
+}
+.trending_header {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 150%;
+}
+.trending_date {
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 120%;
+}
+.trending_time {
+  padding: 0.4rem 1.3rem;
+  background: #fff;
+  border-radius: 1.6rem;
+  font-size: 1.4rem;
+  line-height: 114%;
+  color: #000;
+}
+.trending_plash {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  font-size: 1.4rem;
+  line-height: 114%;
+  border-radius: 1.6rem;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 0.4rem 1.5rem;
+}
+.small {
+  width: 3rem;
+  height: 3rem;
+  left: 7%;
+}
+.small_plus {
+  width: 1.8rem;
+  height: 1.8rem;
+  left: 10%;
+}
+.button_play_wrap.small .button_play {
+  width: 0;
+  height: 0;
+  border-top: 0.5rem solid transparent;
+  border-left: 0.8rem solid #fff;
+  border-bottom: 0.5rem solid transparent;
+  border-radius: 0.2rem;
+}
+.button_play_wrap.small_plus .button_play {
+  width: 0;
+  height: 0;
+  border-top: 0.35rem solid transparent;
+  border-left: 0.5rem solid #fff;
+  border-bottom: 0.35rem solid transparent;
+  border-radius: 0.2rem;
+}
+.popular_item {
+  display: flex;
+  align-items: flex-end;
+  width: 30%;
+  height: 19.2rem;
+  border-radius: 1.6rem;
+  background: url(../img/popular-back.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.popular_header {
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 120%;
+}
+.popular_date {
+  font-weight: 700;
+  font-size: 0.8rem;
+  line-height: 113%;
+}
+.popular_rating {
+  display: flex;
+  align-items: center;
+}
+.popular_rating span {
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 120%;
   margin-left: 0.4rem;
 }
 
