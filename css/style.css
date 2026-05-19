@@ -68,13 +68,16 @@ input {
     "my-aside my-main my-main"
     "my-aside my-main my-main";
   grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
-  gap: 8rem 0;
+  gap: 3rem 0;
 }
 
 .grid-init {
   max-width: 144rem;
   margin: auto;
   padding: 3rem 2.4rem 4rem;
+}
+.header {
+  box-shadow: 0px 0.4rem 1rem rgba(255, 255, 255, 0.07);
 }
 .header_wrap {
   display: flex;
@@ -138,6 +141,9 @@ input {
   width: 6rem;
   height: 6rem;
   border-radius: 50%;
+}
+.main_display {
+  padding-top: 5rem;
 }
 .main_display_trailer {
   position: relative;
@@ -342,7 +348,34 @@ input {
   margin-left: 0.4rem;
 }
 .aside {
-  padding-right: 5.9rem;
+  position: relative;
+  padding-right: 3.6rem;
+}
+.aside::after {
+  content: url(../img/Polygon.svg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.2rem;
+  height: 2.6rem;
+  background: #fcfcfe;
+  border-radius: 2rem;
+  position: absolute;
+  top: 10.7rem;
+  right: 2.5rem;
+  cursor: pointer;
+}
+.aside_wrap {
+  background: rgba(255, 255, 255, 0.02);
+  margin-left: -2.4rem;
+}
+.aside_top {
+  padding-top: 5rem;
+  padding-right: 2.3rem;
+  padding-left: 2.4rem;
+  padding-bottom: 4rem;
+  background: #17161b;
+  border-right: 0.1rem solid #1c1b1f;
 }
 .aside_title {
   display: flex;
@@ -399,13 +432,31 @@ input {
 }
 .aside_item:nth-child(3) {
   margin-top: 3rem;
-  margin-bottom: 4rem;
+  /* margin-bottom: 4rem; */
 }
 .aside_views {
   position: relative;
   font-weight: 700;
   font-size: 1.6rem;
   line-height: 119%;
+}
+.aside_footer {
+  position: relative;
+  z-index: 10;
+}
+.aside_footer_bottom {
+  position: relative;
+}
+.aside_footer_bottom::before {
+  position: absolute;
+  top: -50%;
+  left: 0;
+  transform: translate(0, 50%);
+  content: "";
+  display: block;
+  width: 6.5rem;
+  height: 0.1rem;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 .aside_item_name {
   margin-bottom: 0.5rem;
@@ -420,7 +471,6 @@ input {
 }
 .aside_bottom {
   padding: 2.5rem 0 2rem 2.4rem;
-  background: rgba(255, 255, 255, 0.02);
 }
 .aside_favourite_text {
   margin-bottom: 2rem;
